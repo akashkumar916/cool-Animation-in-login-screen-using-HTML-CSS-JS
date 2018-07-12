@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="w.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#usr").on("focus", function() {
+      $('#im').removeAttr('src')
+      $('#im').attr('src','d.gif')
+      });
+      $("#usr").on("blur", function() {
+        $('#im').removeAttr('src')
+        $('#im').attr('src','a.gif')
+        });
+        $("#pwd").on("focus", function() {
+            $('#im').removeAttr('src')
+            $('#im').attr('src','w.png')
+            });
+            $("#pwd").on("blur", function() {
+                $('#im').removeAttr('src')
+                $('#im').attr('src','a.gif')
+                });
+          
+
+
+
+
+
+
+    });
+    </script>
+<style>
+
+
+
+
+
+
+</style>
+</head>
+<body>
+ 
+<div class="container ">
+  <h2 class="text-center">Login</h2>
+
+  <div class="card bg-secondary" style="width:450px;position:absolute;top:10%;left:38%;border:2px solid rgb(25, 241, 54)">
+    <img class="card-img-top" src="a.gif" alt="Card image" loop="1" id="im" style="width:100%;height:400px;">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" placeholder="name please"id="usr">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" placeholder="your passward" id="pwd">
+          </div>
+    </div>
+  </div>
+ 
+</body>
+</html>
